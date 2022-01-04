@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devfinder</title>
+    <link rel="stylesheet" href="static/lightTheme.css" />
+  </head>
+  <body>
+    <div class="bodyContainer">
+      <header>
+        <section class="header">
+          <h1>devfinder</h1>
+          <div class="themeSection">
+            <p>dark</p>
+            <div class="themeLogoContainer">
+              <img src="public/icon-moon.svg" alt="moon logo" />
+            </div>
+          </div>
+        </section>
+      </header>
+      <main>
+        <div class="searchUserSection">
+          <div class="searchIconContainer">
+            <img src="public/icon-search.svg" alt="search icon" />
+          </div>
+          <div class="searchInputWrapper">
+            <label for="searchUserInput">
+              <input
+                type="text"
+                id="searchUserInput"
+                class="searchUserInput"
+                placeholder="Search GitHub username..."
+              />
+            </label>
+            <h5 class="noResultsText">No results</h5>
+          </div>
+          <button>Search</button>
+        </div>
+        <div class="userSection">
+          <div class="userPictureContainer">
+            <img src="public/codercat.jpg" alt="user picture" />
+          </div>
+          <div class="userInfoContainer">
+            <section class="userInfoHeader">
+              <h2 class="userName">The Otocat</h2>
+              <p class="userJoined">Joined 25 Jan 2011</p>
+            </section>
+            <h4 class="userRealName">@octocat</h4>
+            <h4 class="userBio">This profile has no bio</h4>
+            <section class="additionalInfoSection">
+              <div>
+                <section class="userRepos">
+                  <h4>Repos</h4>
+                  <p>8</p>
+                </section>
+                <section class="userFollowers">
+                  <h4>Followers</h4>
+                  <p>3938</p>
+                </section>
+                <section class="userFollowing">
+                  <h4>Following</h4>
+                  <p>9</p>
+                </section>
+              </div>
+              <div class="userInfoFooter">
+                <section class="location">
+                  <div class="locationImgContainer">
+                    <img src="public/icon-location.svg" alt="location logo" />
+                  </div>
+                  <h6>San Francisco</h6>
+                </section>
+                <section class="twitter">
+                  <div class="twitterImgContainer">
+                    <img src="public/icon-twitter.svg" alt="twitter logo" />
+                  </div>
+                  <h6><a>Not Available</a></h6>
+                </section>
+                <section class="blog">
+                  <div class="blogImgContainer">
+                    <img
+                      src="public/icon-website.svg"
+                      alt="website link logo"
+                    />
+                  </div>
+                  <h6><a href="https://github.blog">https://github.blog</a></h6>
+                </section>
+                <section class="company">
+                  <div class="companyImgContainer">
+                    <img src="public/icon-company.svg" alt="company logo" />
+                  </div>
+                  <h6>
+                    <a href="https://github.com/github">https://github.blog</a>
+                  </h6>
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

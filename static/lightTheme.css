@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    background-color: #F6F8FF;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.bodyContainer {
+    width: 730px;
+    margin: 0 auto;
+    padding-top: 148px;
+}
+
+/* HEADER Section */
+
+header .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.header .themeSection {
+    display: flex;
+}
+
+.themeSection p {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #697C9A;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    margin-right: 10px;
+}
+
+/* MAIN Section */
+
+/* Search User */
+
+
+.searchUserSection{
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    padding: 10px 10px 10px 35px;
+    align-items: center;
+    border-radius: 17px;
+    box-shadow: 0px 19px 32px -30px rgba(0,0,0,0.69);
+    margin-bottom: 25px;
+}
+
+.searchIconContainer{
+    margin-top: 5px;
+}
+
+.searchInputWrapper{
+    position: relative;
+}
+
+.searchUserSection input {
+    width: 515px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border: none;
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    font-weight: lighter;
+    outline: none;
+}
+
+.noResultsText{
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #F74646;
+    display: none;
+}
+
+.searchUserSection button {
+    background-color: #0079FF;
+    color: #fff;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 15px 26px ;
+}
+
+/* User Info */
+
+.userPictureContainer{
+    margin-right: 30px;
+}
+
+.userPictureContainer img{
+    width: 129px;
+    height: 109px;
+    border-radius: 50%;
+}
+
+.userSection {
+    background-color: #fff;
+    display: flex;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0px 19px 32px -30px rgba(0,0,0,0.69);
+}
+
+.userInfoContainer{
+    flex-grow: 1;
+}
+ .userInfoHeader {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+ }
+
+ .userInfoHeader .userName {
+     font-size: 26px;
+     font-weight: bold;
+ }
+
+ .userInfoHeader p {
+     color: #697C9A;
+     font-size: 15px;
+ }
+
+ .userRealName {
+     color: #0079FF;
+     font-weight: normal;
+     margin: 10px 0 30px 0;
+ }
