@@ -23,7 +23,7 @@ body {
 header .header{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 32px;
 }
 
 .header h1 {
@@ -56,7 +56,7 @@ header .header{
     padding: 10px 10px 10px 35px;
     align-items: center;
     border-radius: 17px;
-    box-shadow: 0px 19px 32px -30px rgba(0,0,0,0.69);
+    box-shadow: -1px 15px 31px -11px rgba(70,96,187,0.32);
     margin-bottom: 25px;
 }
 
@@ -66,6 +66,10 @@ header .header{
 
 .searchInputWrapper{
     position: relative;
+}
+
+input::placeholder {
+    color: #4B6A9B;
 }
 
 .searchUserSection input {
@@ -118,9 +122,9 @@ header .header{
 .userSection {
     background-color: #fff;
     display: flex;
-    padding: 40px;
+    padding: 44px 49px 49px 44px;
     border-radius: 14px;
-    box-shadow: 0px 19px 32px -30px rgba(0,0,0,0.69);
+    box-shadow: -1px 15px 31px -11px rgba(70,96,187,0.32);
 }
 
 .userInfoContainer{
@@ -145,5 +149,52 @@ header .header{
  .userRealName {
      color: #0079FF;
      font-weight: normal;
-     margin: 10px 0 30px 0;
+     margin: 10px 0 20px 0;
+ }
+ .userBio{
+     color: #788FB4;
+     font-weight: normal;
+     margin-bottom: 32px;
+ }
+
+ .additionalInfoSection .flex{
+     background-color: #F6F8FF;
+     padding: 15px 32px;
+     border-radius: 10px;
+     margin-bottom: 37px;
+ }
+
+ .additionalInfoSection .flex, .additionalInfoSection section {
+    display: flex;
+ }
+
+ .additionalInfoSection section {
+     flex-direction: column;
+     flex-grow: 1;
+ }
+
+ .additionalInfoSection .flex h4 {
+     color: #4B6A9B;
+     font-weight: normal;
+     font-size: 13px;
+ }
+
+ .additionalInfoSection .flex p {
+     font-weight: bold;
+     font-size: 22px;
+ }
+
+ .userInfoFooter {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .userInfoFooter section {
+     width: 50%;
+     display: flex;
+     flex-direction: row;
+ }
+
+ .userInfoFooter section div {
+     margin-right: 17px;
  }
