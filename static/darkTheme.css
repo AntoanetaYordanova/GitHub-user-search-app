@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+.body {
+    background-color: #111;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.bodyContainer {
+    width: 730px;
+    margin: 0 auto;
+    padding-top: 148px;
+}
+
+a:hover, button:hover, .themeSection p:hover, .themeSection img:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER Section */
+
+header .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.header h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.header .themeSection {
+    display: flex;
+}
+
+.themeSection p {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #697C9A;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    margin-right: 10px;
+}
+
+.themeSection {
+    position: relative;
+}
+
+.themeBoxLabel{
+background-color: blue;
+position: absolute;
+width: 70px;
+/* z-index: -1; */
+opacity: 0;
+}
+
+.themeBoxLabel:hover {
+    cursor: pointer;
+}
+
+/* MAIN Section */
+
+/* Search User */
+
+
+.searchUserSection{
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    padding: 10px 10px 10px 35px;
+    align-items: center;
+    border-radius: 17px;
+    box-shadow: -1px 15px 31px -11px rgba(70,96,187,0.32);
+    margin-bottom: 25px;
+}
+
+.searchIconContainer{
+    margin-top: 5px;
+}
+
+.searchInputWrapper{
+    position: relative;
+}
+
+input::placeholder {
+    color: #4B6A9B;
+}
+
+.searchUserSection input {
+    width: 515px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border: none;
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    font-weight: lighter;
+    outline: none;
+}
+
+.noResultsText{
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #F74646;
+    display: none;
+}
+
+.searchUserSection button {
+    background-color: #0079FF;
+    color: #fff;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 15px 26px ;
+}
+
+button.transition {
+    transition: 0.3s;
+}
+
+.searchUserSection button:hover {
+    background-color: #60ABFF;
+}
+/* User Info */
+
+.userPictureContainer{
+    margin-right: 30px;
+}
+
+.userPictureContainer img{
+    width: 129px;
+    height: 109px;
+    border-radius: 50%;
+}
+
+.userSection {
+    background-color: #fff;
+    display: flex;
+    padding: 44px 49px 49px 44px;
+    border-radius: 14px;
+    box-shadow: -1px 15px 31px -11px rgba(70,96,187,0.32);
+}
+
+.userInfoContainer{
+    flex-grow: 1;
+}
+ .userInfoHeader {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+ }
+
+ .userInfoHeader .userName {
+     font-size: 26px;
+     font-weight: bold;
+ }
+
+ .userInfoHeader p {
+     color: #697C9A;
+     font-size: 15px;
+ }
+
+ .userRealName {
+     color: #0079FF;
+     font-weight: normal;
+     margin: 10px 0 20px 0;
+ }
+
+ .userBio{
+     color: #4B6A9B;
+     font-weight: normal;
+     margin-bottom: 32px;
+ }
+
+ .userBioNotFound {
+    color: #788FB4;
+}
+
+ .additionalInfoSection .flex{
+     background-color: #F6F8FF;
+     padding: 15px 32px;
+     border-radius: 10px;
+     margin-bottom: 37px;
+ }
+
+ .additionalInfoSection .flex, .additionalInfoSection section {
+    display: flex;
+ }
+
+ .additionalInfoSection section {
+     flex-direction: column;
+     flex-grow: 1;
+ }
+
+ .additionalInfoSection .flex h4 {
+     color: #4B6A9B;
+     font-weight: normal;
+     font-size: 13px;
+ }
+
+ .additionalInfoSection .flex p {
+     font-weight: bold;
+     font-size: 22px;
+ }
+
+ .userInfoFooter {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .userInfoFooter section {
+     width: 50%;
+     display: flex;
+     flex-direction: row;
+ }
+
+ .userInfoFooter h6 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+ .userInfoFooter section div {
+     margin-right: 18px;
+ }
+
+ .footerNotFound {
+    color: #A3B3CB;
+ }
+
+.footerNotFound a:hover {
+    text-decoration: none;
+    cursor: auto;
+} 
+
+ .footerFound a, .footerFound h6{
+    color: #4B6A9B;
+ }
+
+/* DARK THEME */
+

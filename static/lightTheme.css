@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+
 body {
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
-    background-color: #F6F8FF;
 }
+
+.body {
+    background-color: #F6F8FF;
+    height: 100vh;
+    transition: 0.4s;
+}
+
 
 *, *::before, *::after {
     margin: 0;
@@ -16,6 +23,18 @@ body {
     width: 730px;
     margin: 0 auto;
     padding-top: 148px;
+}
+
+a:hover, button:hover, .themeSection p:hover, .themeSection img:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* HEADER Section */
@@ -42,6 +61,22 @@ header .header{
     font-size: 13px;
     letter-spacing: 2.5px;
     margin-right: 10px;
+}
+
+.themeSection {
+    position: relative;
+}
+
+.themeBoxLabel{
+background-color: blue;
+position: absolute;
+width: 70px;
+/* z-index: -1; */
+opacity: 0;
+}
+
+.themeBoxLabel:hover {
+    cursor: pointer;
 }
 
 /* MAIN Section */
@@ -86,6 +121,10 @@ input::placeholder {
     outline: none;
 }
 
+.searchUserSection button:hover {
+    background-color: #60ABFF;
+}
+
 .noResultsText{
     position: absolute;
     right: 15px;
@@ -105,6 +144,10 @@ input::placeholder {
     font-weight: bold;
     border-radius: 7px;
     padding: 15px 26px ;
+}
+
+button.transition {
+    transition: 0.3s;
 }
 
 /* User Info */
@@ -151,11 +194,16 @@ input::placeholder {
      font-weight: normal;
      margin: 10px 0 20px 0;
  }
+
  .userBio{
-     color: #788FB4;
+     color: #4B6A9B;
      font-weight: normal;
      margin-bottom: 32px;
  }
+
+ .userBioNotFound {
+    color: #788FB4;
+}
 
  .additionalInfoSection .flex{
      background-color: #F6F8FF;
@@ -195,6 +243,44 @@ input::placeholder {
      flex-direction: row;
  }
 
+ .userInfoFooter h6 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
  .userInfoFooter section div {
      margin-right: 18px;
  }
+
+ .footerNotFound {
+    color: #A3B3CB;
+ }
+
+.footerNotFound a:hover {
+    text-decoration: none;
+    cursor: auto;
+} 
+
+ .footerFound a, .footerFound h6{
+    color: #4B6A9B;
+ }
+
+/* DARK THEME */
+
+.darkBody, .darkElBg {
+    box-shadow: none;
+}
+
+.darkBody {
+    background-color: #141D2F;
+    color: #fff;
+}
+
+.darkElBg {
+    background-color: #1E2A47;
+    color: #fff;
+}
+
+.bodyDarkThemeFontColor {
+    color: #fff;
+}
